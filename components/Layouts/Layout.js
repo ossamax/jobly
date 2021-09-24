@@ -25,9 +25,6 @@ const Layout = ({ children }) => {
     setMobilelinks(!mobilelinks);
   };
 
-
-
-
   return (
     <div className={styles.container}>
       <Head>
@@ -51,7 +48,7 @@ const Layout = ({ children }) => {
             />
           </div>
 
-          <div className={mobilelinks ? styles.nav_links : styles.mobile_links}>
+          <div className={mobilelinks ? styles.mobile_links : styles.nav_links}>
             <div className={styles.link}>Home </div>
 
             <div className={styles.link}>Jobs</div>
