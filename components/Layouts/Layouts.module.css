@@ -15,8 +15,6 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  position: relative;
-  z-index: 100;
 }
 
 .container .header {
@@ -190,6 +188,21 @@
   transition: 0.3s ease-in-out;
   -webkit-animation: FadeIn 0.3s ease-in-out forwards;
           animation: FadeIn 0.3s ease-in-out forwards;
+}
+
+@media screen and (min-width: 800px) {
+  .container .header .navigation .mobile_links {
+    z-index: 1;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
 }
 
 .container .header .navigation .mobile_links .link {
