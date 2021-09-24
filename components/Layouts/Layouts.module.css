@@ -218,6 +218,9 @@
 @media screen and (max-width: 800px) {
   .container .header .navigation .mobile_links .link {
     margin: 0.8rem 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
