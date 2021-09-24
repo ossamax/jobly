@@ -114,6 +114,7 @@
         background-color: white;
         transition: 0.3s ease-in-out;
         animation: FadeIn 0.3s ease-in-out forwards;
+        border-top: 0.5px solid rgba(18, 119, 60, 0.226);
         @media screen and (min-width: 800px) {
           z-index: 1;
           top: 0;
@@ -128,7 +129,7 @@
           color: #1c4a36;
           transition: 0.3s ease-in-out;
           @media screen and (max-width: 800px) {
-            margin: 0.5rem 0;
+            margin: 0.8rem 0;
           }
           &:hover {
             .arrow_container {

@@ -188,6 +188,7 @@
   transition: 0.3s ease-in-out;
   -webkit-animation: FadeIn 0.3s ease-in-out forwards;
           animation: FadeIn 0.3s ease-in-out forwards;
+  border-top: 0.5px solid rgba(18, 119, 60, 0.226);
 }
 
 @media screen and (min-width: 800px) {
@@ -216,7 +217,7 @@
 
 @media screen and (max-width: 800px) {
   .container .header .navigation .mobile_links .link {
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
   }
 }
 
