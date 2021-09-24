@@ -5,6 +5,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
+  background-color: #e4f5ee;
+  overflow-x: hidden;
 }
 
 a {

@@ -20,6 +20,14 @@ const Layout = ({ children }) => {
     setActivecategorie(false);
   };
 
+  const [mobilelinks, setMobilelinks] = useState(false);
+  const activeMobilelinks = () => {
+    setMobilelinks(!mobilelinks);
+  };
+
+
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -35,7 +43,7 @@ const Layout = ({ children }) => {
             </div>
           </Link>
 
-          <div className={styles.bar_container}>
+          <div className={styles.bar_container} onClick={activeMobilelinks}>
             <Image
               src={barMenu}
               alt="Jobly logo brand"
@@ -43,7 +51,7 @@ const Layout = ({ children }) => {
             />
           </div>
 
-          <div className={styles.nav_links}>
+          <div className={mobilelinks ? styles.nav_links : styles.mobile_links}>
             <div className={styles.link}>Home </div>
 
             <div className={styles.link}>Jobs</div>
@@ -98,12 +106,11 @@ const Layout = ({ children }) => {
                     : styles.sublinks_categories_noneactive
                 }
               >
-                <div>Customer Services</div>
-                <div>Project Management</div>
-                <div>Development</div>
-                <div>Design</div>
-                <div>Marketing</div>
-                <div>Accounting / Finance</div>
+                <div>Morocco , MR</div>
+                <div>France , EU</div>
+                <div>London ,UK</div>
+                <div>Manhattan ,NY</div>
+                <div>Remote</div>
               </div>
             </div>
           </div>
