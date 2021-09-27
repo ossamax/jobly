@@ -1,10 +1,4 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   .header {
     background-color: white;
@@ -12,7 +6,7 @@
     position: relative;
     z-index: 100;
     .navigation {
-      width: 90%;
+      width: 98%;
       margin: auto;
       padding: 1rem;
       display: flex;
@@ -21,6 +15,12 @@
       .logo {
         width: 75px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 800px) {
+          width: 65px;
+        }
       }
       .bar_container {
         width: 30px;
@@ -105,7 +105,7 @@
       .mobile_links {
         left: 0;
         right: 0;
-        top: 4rem;
+        top: 100%;
         z-index: -1;
         padding: 0.5rem 2rem;
         position: absolute;
@@ -130,7 +130,7 @@
           transition: 0.3s ease-in-out;
           @media screen and (max-width: 800px) {
             margin: 0.8rem 0;
-           width: fit-content;
+            width: fit-content;
           }
           &:hover {
             .arrow_container {
@@ -200,21 +200,16 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  background-color: white;
   border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: #1c4a36;
 }
 
 @keyframes FadeIn {
