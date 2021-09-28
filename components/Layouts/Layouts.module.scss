@@ -1,5 +1,4 @@
 .container {
-  height: 100vh;
   .header {
     background-color: white;
     width: 100vw;
@@ -22,21 +21,7 @@
           width: 65px;
         }
       }
-      .bar_container {
-        width: 30px;
-        height: 30px;
-        transition: 0.3s ease-in-out;
-        &:hover {
-          transform: translateY(-1px);
-        }
-        @media screen and (min-width: 800px) {
-          display: none;
-        }
-        .barMenu {
-          cursor: pointer;
-          display: inline-block;
-        }
-      }
+
       .nav_links {
         display: flex;
         transition: 0.3s ease-in-out;
@@ -174,8 +159,24 @@
         }
       }
       .cta_container {
-        @media screen and (max-width: 800px) {
-          display: none;
+        display: flex;
+        align-items: center;
+
+        .bar_container {
+          width: 30px;
+          height: 30px;
+          transition: 0.3s ease-in-out;
+          margin-left: 1rem;
+          &:hover {
+            transform: translateY(-1px);
+          }
+          @media screen and (min-width: 800px) {
+            display: none;
+          }
+          .barMenu {
+            cursor: pointer;
+            display: inline-block;
+          }
         }
         .cta_login {
           background-color: red;
@@ -188,7 +189,9 @@
           cursor: pointer;
           font-size: 0.85rem;
           transition: 0.3s ease-in-out;
-
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
           &:hover {
             background-color: #1c4a36;
             color: white;
@@ -200,7 +203,7 @@
 }
 
 .main {
-  height: 100vh;
+  height: auto;
 }
 
 .footer {

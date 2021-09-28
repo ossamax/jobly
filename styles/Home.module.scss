@@ -5,9 +5,23 @@
     width: 90%;
     margin: auto;
     padding: 3rem 0;
+    @media screen and (min-width: 700px) {
+      padding: 6rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .hero_content {
       color: #1c4a36;
       font-weight: 600;
+      max-width: 600px;
+      margin: auto;
+      transition: 0.4s ease-in-out;
+      animation: fadeAnimation 1s ease-in-out forwards;
+      @media screen and (min-width: 800px) {
+        width: 45%;
+        margin: 0;
+      }
       .hero_span {
         background-color: white;
         font-size: 0.8rem;
@@ -20,6 +34,9 @@
         font-size: 2.2rem;
         margin-top: 1rem;
         line-height: 1;
+        @media screen and (min-width: 700px) {
+          font-size: 3rem;
+        }
       }
       p {
         color: #1c4a36;
@@ -29,6 +46,10 @@
         line-height: 1.5;
       }
       form {
+        position: relative;
+        @media screen and (min-width: 800px) {
+          height: 75px;
+        }
         input {
           width: 100%;
           padding: 1.3rem 3.5rem;
@@ -40,6 +61,11 @@
           background-position-x: 30px;
           outline: none;
           border-radius: 5px;
+          @media screen and (min-width: 800px) {
+            position: relative;
+            height: 100%;
+            padding: 0 4rem;
+          }
         }
         input::placeholder {
           font-size: 1rem;
@@ -56,8 +82,206 @@
           border-radius: 5px;
           cursor: pointer;
           font-size: 1rem;
+          @media screen and (min-width: 800px) {
+            position: absolute;
+            right: 0;
+            width: 150px;
+            height: 86%;
+            margin: 0.3rem;
+            background-color: #e4f5ee;
+            color: #1c4a36;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              background-color: #1c4a36;
+              color: white;
+            }
+          }
+        }
+      }
+      .popular_categories {
+        font-size: 0.85rem;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+
+        .tags_head {
+          text-align: center;
+          color: #919191;
+          @media screen and (min-width: 700px) {
+            text-align: left;
+          }
+        }
+        .tags {
+          margin: 0.8rem 0;
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          justify-content: center;
+          align-items: center;
+          row-gap: 10px;
+          column-gap: 20px;
+          @media screen and (min-width: 700px) {
+            grid-template-columns: repeat(4, auto);
+            justify-content: flex-start;
+          }
+          div {
+            display: inline-block;
+            color: #686868;
+            cursor: pointer;
+            word-wrap: normal;
+            text-align: center;
+            @media screen and (min-width: 700px) {
+              text-align: left;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
       }
     }
+    .circle_wrapper {
+      position: relative;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      @media screen and (min-width: 800px) {
+        width: 45%;
+      }
+      .logo1,
+      .logo2,
+      .logo3,
+      .logo4,
+      .logo5,
+      .logo6 {
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        background-repeat: no-repeat;
+        border: 8px solid white;
+        background-size: cover;
+        border-radius: 100%;
+        overflow: hidden;
+        z-index: 2;
+        cursor: pointer;
+        animation: scaleAnimation 1s ease-in-out forwards;
+        transition: 0.4s ease-in-out;
+      }
+      .logo1 {
+        background-image: url("../public/logo_1.jpg");
+        top: 4rem;
+        left: -2rem;
+      }
+      .logo2 {
+        background-image: url("../public/logo_2.jpg");
+        top: 17rem;
+        left: -2rem;
+      }
+      .logo3 {
+        background-image: url("../public/logo_3.jpg");
+        top: 27rem;
+        left: 12rem;
+      }
+      .logo4 {
+        background-image: url("../public/logo_4.jpg");
+        top: 17rem;
+        right: -2rem;
+      }
+      .logo5 {
+        background-image: url("../public/logo_5.jpg");
+        right: -1rem;
+        top: 3rem;
+      }
+      .logo6 {
+        background-image: url("../public/logo_6.jpg");
+        top: -3rem;
+        right: 13rem;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        border-radius: 100%;
+        border: 1px dotted #1c4a3685;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 900px) {
+          width: 500px;
+          height: 500px;
+        }
+        .hero_logo {
+          background-color: white;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          animation: scaleAnimation 1s ease-in-out forwards;
+          transition: 0.4s ease-in-out;
+          img {
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+.partners {
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    padding: 4rem 0;
+    .header {
+      color: #1c4a36;
+      text-align: center;
+      font-weight: 600;
+    }
+    .companies {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      margin: 2rem auto;
+      row-gap: 20px;
+      column-gap: 50px;
+      max-width: 500px;
+
+      @media screen and (min-width: 700px) {
+        grid-template-columns: repeat(4, auto);
+      }
+      .companie_logo {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(50%);
+        opacity: 0.4;
+        @media screen and (min-width: 700px) {
+          width: 100px;
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -1,5 +1,11 @@
 import Layout from "../components/Layouts/Layout";
 import styles from "../styles/Home.module.scss";
+import heroLogo from "../public/logo_hero.png";
+import Image from "next/image";
+import partner1 from "../public/partner1.png";
+import partner2 from "../public/partner2.png";
+import partner3 from "../public/partner3.png";
+import partner4 from "../public/partner4.png";
 
 export default function Home() {
   return (
@@ -17,6 +23,49 @@ export default function Home() {
                 <input type="text" placeholder="Job Title , Keywords..." />
                 <button type="submit">Find Jobs</button>
               </form>
+              <div className={styles.popular_categories}>
+                <div className={styles.tags_head}>Popular Categories :</div>
+                <div className={styles.tags}>
+                  <div>Customer Services</div>
+                  <div>Project Management</div>
+                  <div>Development</div>
+                  <div>Design UX & UI</div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.circle_wrapper}>
+              <div className={styles.logo1}></div>
+              <div className={styles.circle}>
+                <div className={styles.hero_logo}>
+                  <Image src={heroLogo} alt="Jobly Logo" />
+                </div>
+              </div>
+              <div className={styles.logo2}></div>
+              <div className={styles.logo3}></div>
+              <div className={styles.logo4}></div>
+              <div className={styles.logo5}></div>
+              <div className={styles.logo6}></div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.partners}>
+          <div className={styles.wrapper}>
+            <div className={styles.header}>
+              <p>These companies partnered with us to drive growth</p>
+            </div>
+            <div className={styles.companies}>
+              <div className={styles.companie_logo}>
+                <Image src={partner1} alt="Friday logo" />
+              </div>
+              <div className={styles.companie_logo}>
+                <Image src={partner2} alt="New Wave logo" />
+              </div>
+              <div className={styles.companie_logo}>
+                <Image src={partner3} alt="The back yard logo" />
+              </div>
+              <div className={styles.companie_logo}>
+                <Image src={partner4} alt="the retro studio" />
+              </div>
             </div>
           </div>
         </div>

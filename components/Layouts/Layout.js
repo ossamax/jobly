@@ -40,14 +40,6 @@ const Layout = ({ children }) => {
             </div>
           </Link>
 
-          <div className={styles.bar_container} onClick={activeMobilelinks}>
-            <Image
-              src={barMenu}
-              alt="Jobly logo brand"
-              className={styles.barMenu}
-            />
-          </div>
-
           <div className={mobilelinks ? styles.mobile_links : styles.nav_links}>
             <div className={styles.link}>Home </div>
 
@@ -113,6 +105,13 @@ const Layout = ({ children }) => {
           </div>
           <div className={styles.cta_container}>
             <button className={styles.cta_login}>Login / Register</button>
+            <div className={styles.bar_container} onClick={activeMobilelinks}>
+              <Image
+                src={barMenu}
+                alt="Jobly logo brand"
+                className={styles.barMenu}
+              />
+            </div>
           </div>
         </div>
       </header>

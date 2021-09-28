@@ -1,7 +1,3 @@
-.container {
-  height: 100vh;
-}
-
 .container .header {
   background-color: white;
   width: 100vw;
@@ -42,29 +38,6 @@
   .container .header .navigation .logo {
     width: 65px;
   }
-}
-
-.container .header .navigation .bar_container {
-  width: 30px;
-  height: 30px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.container .header .navigation .bar_container:hover {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-}
-
-@media screen and (min-width: 800px) {
-  .container .header .navigation .bar_container {
-    display: none;
-  }
-}
-
-.container .header .navigation .bar_container .barMenu {
-  cursor: pointer;
-  display: inline-block;
 }
 
 .container .header .navigation .nav_links {
@@ -284,10 +257,37 @@
   display: none;
 }
 
-@media screen and (max-width: 800px) {
-  .container .header .navigation .cta_container {
+.container .header .navigation .cta_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .navigation .cta_container .bar_container {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin-left: 1rem;
+}
+
+.container .header .navigation .cta_container .bar_container:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+@media screen and (min-width: 800px) {
+  .container .header .navigation .cta_container .bar_container {
     display: none;
   }
+}
+
+.container .header .navigation .cta_container .bar_container .barMenu {
+  cursor: pointer;
+  display: inline-block;
 }
 
 .container .header .navigation .cta_container .cta_login {
@@ -304,13 +304,19 @@
   transition: 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+  .container .header .navigation .cta_container .cta_login {
+    display: none;
+  }
+}
+
 .container .header .navigation .cta_container .cta_login:hover {
   background-color: #1c4a36;
   color: white;
 }
 
 .main {
-  height: 100vh;
+  height: auto;
 }
 
 .footer {
