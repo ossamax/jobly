@@ -318,8 +318,11 @@
           color: #686868;
           font-size: 1rem;
           line-height: 1.5;
-          max-width: 300px;
-          margin: auto;
+
+          @media screen and (min-width: 800px) {
+            max-width: 300px;
+            margin: auto;
+          }
         }
       }
     }
