@@ -6,6 +6,9 @@ import partner1 from "../public/partner1.png";
 import partner2 from "../public/partner2.png";
 import partner3 from "../public/partner3.png";
 import partner4 from "../public/partner4.png";
+import feature1 from "../public/features1.png";
+import feature2 from "../public/features2.png";
+import feature3 from "../public/features3.png";
 
 export default function Home() {
   return (
@@ -65,6 +68,33 @@ export default function Home() {
               </div>
               <div className={styles.companie_logo}>
                 <Image src={partner4} alt="the retro studio" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.features}>
+          <div className={styles.wrapper}>
+            <div className={styles.header}>
+              <div className={styles.features_span}>
+                Build your future with us
+              </div>
+              <h1>How Jobly Works</h1>
+            </div>
+            <div className={styles.features_grid}>
+              <div className={styles.feature}>
+                <Image src={feature1} alt="Resume Assessments icon" />
+                <h4>Resume Assessments</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div className={styles.feature}>
+                <Image src={feature2} alt="Job Fit Scoring icon" />
+                <h4>Job Fit Scoring</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div className={styles.feature}>
+                <Image src={feature3} alt="Top-Notch Help" />
+                <h4>Top-Notch Help</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
           </div>
