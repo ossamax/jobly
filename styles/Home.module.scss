@@ -402,10 +402,6 @@
         padding: 2rem 1rem;
         transition: 0.3s ease-in-out;
         position: relative;
-        margin: 2rem 0;
-        @media screen and (min-width: 800px) {
-          margin: 0;
-        }
         &:hover {
           transform: translateY(-5px);
           box-shadow: 5px 5px 10px rgb(228, 227, 227);
