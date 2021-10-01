@@ -484,6 +484,344 @@
   }
 }
 
+.jobs {
+  background-color: #f2f8f5;
+}
+
+.jobs .wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .jobs .wrapper .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+}
+
+.jobs .wrapper .header .header_text {
+  color: #1c4a36;
+  font-weight: 600;
+}
+
+.jobs .wrapper .header .header_text h1 {
+  margin-bottom: 0.5rem;
+}
+
+.jobs .wrapper .header button {
+  background-color: #1c4a36;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.jobs .wrapper .jobs_ctegories {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .jobs .wrapper .jobs_ctegories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.jobs .wrapper .jobs_ctegories .allCategories {
+  text-align: center;
+  color: #919191;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .jobs .wrapper .jobs_ctegories .allCategories {
+    margin: 0;
+  }
+}
+
+.jobs .wrapper .jobs_ctegories .allCategories:hover {
+  text-decoration: underline;
+}
+
+.jobs .wrapper .jobs_ctegories .Categories {
+  color: #686868;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jobs .wrapper .jobs_ctegories .Categories div {
+  width: auto;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .jobs .wrapper .jobs_ctegories .Categories div {
+    margin: 0 0.5rem;
+  }
+}
+
+.jobs .wrapper .jobs_ctegories .Categories div:hover {
+  text-decoration: underline;
+}
+
+.jobs .wrapper .jobsList {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .jobs .wrapper .jobsList {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .jobs .wrapper .jobsList {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.jobs .wrapper .jobsList .job {
+  background-color: white;
+  color: #1c4a36;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  padding: 2rem 1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+.jobs .wrapper .jobsList .job:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 5px 5px 10px #e4e3e3;
+          box-shadow: 5px 5px 10px #e4e3e3;
+}
+
+.jobs .wrapper .jobsList .job .partTime {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #e4f5ee;
+  color: #1c4a36;
+  border-radius: 2px;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.jobs .wrapper .jobsList .job .featured {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #f5e4f4;
+  color: #611a2c;
+  border-radius: 2px;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.jobs .wrapper .jobsList .job img {
+  width: 55px;
+}
+
+.jobs .wrapper .jobsList .job p {
+  font-weight: 500;
+}
+
+.jobs .wrapper .jobsList .job h2 {
+  margin: 1.5rem 0;
+}
+
+.jobs .wrapper .jobsList .job .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.jobs .wrapper .jobsList .job .description div {
+  width: auto;
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #686868;
+}
+
+.jobs .wrapper .jobsList .job .description div:hover {
+  text-decoration: underline;
+}
+
+.jobs .wrapper .jobsList .job button {
+  background-color: #1c4a36;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.jobs .wrapper .selectLocation {
+  text-align: center;
+  margin: 2rem 0;
+  color: #1c4a36;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+  .jobs .wrapper .selectLocation {
+    margin: 4rem 0 2rem;
+  }
+}
+
+.jobs .wrapper .locations {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .jobs .wrapper .locations {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .jobs .wrapper .locations {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .jobs .wrapper .locations {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.jobs .wrapper .locations .miami,
+.jobs .wrapper .locations .morocco,
+.jobs .wrapper .locations .france,
+.jobs .wrapper .locations .remote {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.jobs .wrapper .locations .miami:hover,
+.jobs .wrapper .locations .morocco:hover,
+.jobs .wrapper .locations .france:hover,
+.jobs .wrapper .locations .remote:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.jobs .wrapper .locations .miami h3,
+.jobs .wrapper .locations .morocco h3,
+.jobs .wrapper .locations .france h3,
+.jobs .wrapper .locations .remote h3 {
+  position: absolute;
+  letter-spacing: 1px;
+  bottom: 1rem;
+  z-index: 2;
+}
+
+.jobs .wrapper .locations .miami .locationOverlay,
+.jobs .wrapper .locations .morocco .locationOverlay,
+.jobs .wrapper .locations .france .locationOverlay,
+.jobs .wrapper .locations .remote .locationOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 107, 83, 0.4)), to(rgba(28, 74, 54, 0.452)));
+  background-image: linear-gradient(180deg, rgba(52, 107, 83, 0.4), rgba(28, 74, 54, 0.452));
+}
+
+.jobs .wrapper .locations .miami {
+  background-image: url("../public/miami.jpg");
+}
+
+.jobs .wrapper .locations .morocco {
+  background-image: url("../public/morocco.jpg");
+}
+
+.jobs .wrapper .locations .france {
+  background-image: url("../public/paris.jpg");
+}
+
+.jobs .wrapper .locations .remote {
+  background-image: url("../public/remote.jpg");
+}
+
 @-webkit-keyframes scaleAnimation {
   0% {
     -webkit-transform: scale(0);

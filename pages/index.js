@@ -226,6 +226,25 @@ export default function Home() {
                 <button>Apply For Job</button>
               </div>
             </div>
+            <div className={styles.selectLocation}>Select By Location</div>
+            <div className={styles.locations}>
+              <div className={styles.miami}>
+                <h3>Miami,FL</h3>
+                <div className={styles.locationOverlay}></div>
+              </div>
+              <div className={styles.morocco}>
+                <h3>Morocco ,RB</h3>
+                <div className={styles.locationOverlay}></div>
+              </div>
+              <div className={styles.france}>
+                <h3>France,PR</h3>
+                <div className={styles.locationOverlay}></div>
+              </div>
+              <div className={styles.remote}>
+                <h3>Remote</h3>
+                <div className={styles.locationOverlay}></div>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>
