@@ -15,6 +15,7 @@ import apple from "../public/apple_logo.png";
 import starbuck from "../public/starbucks_logo.png";
 import dell from "../public/dell_logo.png";
 import slack from "../public/slack_logo.png";
+import plusIcon from "../public/plus_icon.png";
 
 export default function Home() {
   return (
@@ -243,6 +244,100 @@ export default function Home() {
               <div className={styles.remote}>
                 <h3>Remote</h3>
                 <div className={styles.locationOverlay}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.faq}>
+          <div className={styles.wrapper}>
+            <div className={styles.faq_header}>
+              <div className={styles.faq_span}>F.A.Q</div>
+              <h1>Things people oftenask about</h1>
+            </div>
+            <div className={styles.faq_questions}>
+              <div className={styles.question_wrp}>
+                <div className={styles.qst}>
+                  <div className={styles.plusicon}>
+                    <Image src={plusIcon} alt="plus icon" />
+                  </div>
+                  <div className={styles.main_qst}>
+                    Why wont my payment go through?
+                  </div>
+                </div>
+                <div className={styles.respond_active}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </div>
+              </div>
+              <div className={styles.question_wrp}>
+                <div className={styles.qst}>
+                  <div className={styles.plusicon}>
+                    <Image src={plusIcon} alt="plus icon" />
+                  </div>
+                  <div className={styles.main_qst}>
+                    Why wont my payment go through?
+                  </div>
+                </div>
+                <div className={styles.respond_active}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </div>
+              </div>
+              <div className={styles.question_wrp}>
+                <div className={styles.qst}>
+                  <div className={styles.plusicon}>
+                    <Image src={plusIcon} alt="plus icon" />
+                  </div>
+                  <div className={styles.main_qst}>
+                    How do I redeem a coupon?
+                  </div>
+                </div>
+                <div className={styles.respond_active}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </div>
+              </div>
+              <div className={styles.question_wrp}>
+                <div className={styles.qst}>
+                  <div className={styles.plusicon}>
+                    <Image src={plusIcon} alt="plus icon" />
+                  </div>
+                  <div className={styles.main_qst}>
+                    How long does it take to get a free job opening approved?
+                  </div>
+                </div>
+                <div className={styles.respond_active}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </div>
+              </div>
+              <div className={styles.question_wrp}>
+                <div className={styles.qst}>
+                  <div className={styles.plusicon}>
+                    <Image src={plusIcon} alt="plus icon" />
+                  </div>
+                  <div className={styles.main_qst}>
+                    Are there bulk discounts for featured job openings?
+                  </div>
+                </div>
+                <div className={styles.respond_active}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </div>
+              </div>
+              <div className={styles.question_wrp}>
+                <div className={styles.qst}>
+                  <div className={styles.plusicon}>
+                    <Image src={plusIcon} alt="plus icon" />
+                  </div>
+                  <div className={styles.main_qst}>
+                    Whats the cost to post a featured job opening on Jobly?
+                  </div>
+                </div>
+                <div className={styles.respond_active}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </div>
               </div>
             </div>
           </div>
