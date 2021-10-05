@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "../components/Layouts/Layout";
 import styles from "../styles/Home.module.scss";
 import heroLogo from "../public/logo_hero.png";
@@ -15,9 +16,60 @@ import apple from "../public/apple_logo.png";
 import starbuck from "../public/starbucks_logo.png";
 import dell from "../public/dell_logo.png";
 import slack from "../public/slack_logo.png";
-import plusIcon from "../public/plus_icon.png";
 
 export default function Home() {
+  const [active, setActive] = useState(false);
+  const activate = () => {
+    setActive(!active);
+  };
+
+  const [faqs, setfaqs] = useState([
+    {
+      question: " Why wont my payment go through?",
+      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      open: false,
+    },
+    {
+      question: "How long does it take to get a free job opening approved?",
+      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      open: false,
+    },
+    {
+      question: "Are there bulk discounts for featured job openings?",
+      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      open: false,
+    },
+    {
+      question: "What's the cost to post a featured job opening on Jobly?",
+      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      open: false,
+    },
+    {
+      question: "Why won't my payment go through?",
+      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      open: false,
+    },
+    {
+      question: "How do I redeem a coupon?",
+      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      open: false,
+    },
+  ]);
+
+  const toggleFAQ = (index) => {
+    setfaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    );
+  };
+
   return (
     <div className={styles.container}>
       <Layout>
@@ -255,90 +307,27 @@ export default function Home() {
               <h1>Things people oftenask about</h1>
             </div>
             <div className={styles.faq_questions}>
-              <div className={styles.question_wrp}>
-                <div className={styles.qst}>
-                  <div className={styles.plusicon}>
-                    <Image src={plusIcon} alt="plus icon" />
+              {faqs.map((faq, i) => (
+                <div className={styles.question_wrp} key={i}>
+                  <div className={styles.qst} onClick={() => toggleFAQ(i)}>
+                    <div
+                      className={!faq.open ? styles.plusicon : styles.rotate}
+                    >
+                      +
+                    </div>
+                    <div className={styles.main_qst}>{faq.question}</div>
                   </div>
-                  <div className={styles.main_qst}>
-                    Why wont my payment go through?
-                  </div>
-                </div>
-                <div className={styles.respond_active}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique
-                </div>
-              </div>
-              <div className={styles.question_wrp}>
-                <div className={styles.qst}>
-                  <div className={styles.plusicon}>
-                    <Image src={plusIcon} alt="plus icon" />
-                  </div>
-                  <div className={styles.main_qst}>
-                    Why wont my payment go through?
+                  <div
+                    className={
+                      !faq.open
+                        ? styles.respond_nonactive
+                        : styles.respond_active
+                    }
+                  >
+                    {faq.answer}
                   </div>
                 </div>
-                <div className={styles.respond_active}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique
-                </div>
-              </div>
-              <div className={styles.question_wrp}>
-                <div className={styles.qst}>
-                  <div className={styles.plusicon}>
-                    <Image src={plusIcon} alt="plus icon" />
-                  </div>
-                  <div className={styles.main_qst}>
-                    How do I redeem a coupon?
-                  </div>
-                </div>
-                <div className={styles.respond_active}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique
-                </div>
-              </div>
-              <div className={styles.question_wrp}>
-                <div className={styles.qst}>
-                  <div className={styles.plusicon}>
-                    <Image src={plusIcon} alt="plus icon" />
-                  </div>
-                  <div className={styles.main_qst}>
-                    How long does it take to get a free job opening approved?
-                  </div>
-                </div>
-                <div className={styles.respond_active}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique
-                </div>
-              </div>
-              <div className={styles.question_wrp}>
-                <div className={styles.qst}>
-                  <div className={styles.plusicon}>
-                    <Image src={plusIcon} alt="plus icon" />
-                  </div>
-                  <div className={styles.main_qst}>
-                    Are there bulk discounts for featured job openings?
-                  </div>
-                </div>
-                <div className={styles.respond_active}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique
-                </div>
-              </div>
-              <div className={styles.question_wrp}>
-                <div className={styles.qst}>
-                  <div className={styles.plusicon}>
-                    <Image src={plusIcon} alt="plus icon" />
-                  </div>
-                  <div className={styles.main_qst}>
-                    Whats the cost to post a featured job opening on Jobly?
-                  </div>
-                </div>
-                <div className={styles.respond_active}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
