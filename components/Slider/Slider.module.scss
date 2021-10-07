@@ -1,0 +1,55 @@
+.testimonials_wrapper {
+  padding: 4rem 0 2rem;
+  text-align: center;
+  color: #1c4a36;
+
+  .hide {
+    display: none;
+  }
+  .active {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    .testi_image {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border-radius: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    p {
+      margin: 2rem 0 2rem 0;
+      padding: 0 1rem;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    .name,
+    .job {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    .job {
+      margin-top: 0.5rem;
+    }
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  div {
+    width: 12px;
+    height: 12px;
+    background-color: #e4f5ee;
+    margin: 0 0.3rem;
+    cursor: pointer;
+  }
+  div.btn_active {
+    background-color: #1c4a368c;
+  }
+}

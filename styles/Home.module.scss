@@ -571,7 +571,7 @@
     .faq_header {
       text-align: center;
       .faq_span {
-        background-color: #e4f5ee;
+        background-color: white;
         color: #1c4a36;
         display: inline-block;
         font-size: 0.8rem;
@@ -628,6 +628,33 @@
         }
       }
     }
+  }
+}
+
+.testimonials {
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+    .header {
+      text-align: center;
+      .testimonials_span {
+        background-color: #e4f5ee;
+        color: #1c4a36;
+        display: inline-block;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1c4a36;
+        margin-top: 1rem;
+      }
+    }
+   
   }
 }
 

@@ -16,13 +16,10 @@ import apple from "../public/apple_logo.png";
 import starbuck from "../public/starbucks_logo.png";
 import dell from "../public/dell_logo.png";
 import slack from "../public/slack_logo.png";
+import Slider from "../components/Slider/Slider";
+import { SliderData } from "../components/Slider/SliderData";
 
 export default function Home() {
-  const [active, setActive] = useState(false);
-  const activate = () => {
-    setActive(!active);
-  };
-
   const [faqs, setfaqs] = useState([
     {
       question: " Why wont my payment go through?",
@@ -329,6 +326,15 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+        <div className={styles.testimonials}>
+          <div className={styles.wrapper}>
+            <div className={styles.header}>
+              <div className={styles.testimonials_span}>What They Think</div>
+              <h1>Testimonials</h1>
+            </div>
+            <Slider slides={SliderData} />
           </div>
         </div>
       </Layout>
