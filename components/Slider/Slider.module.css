@@ -10,7 +10,7 @@
 
 .testimonials_wrapper .active {
   display: block;
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -38,6 +38,12 @@
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+  .testimonials_wrapper .active p {
+    font-size: 2rem;
+  }
 }
 
 .testimonials_wrapper .active .name,

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import Layout from "../components/Layouts/Layout";
 import styles from "../styles/Home.module.scss";
 import heroLogo from "../public/logo_hero.png";
@@ -18,6 +19,7 @@ import dell from "../public/dell_logo.png";
 import slack from "../public/slack_logo.png";
 import Slider from "../components/Slider/Slider";
 import { SliderData } from "../components/Slider/SliderData";
+import checkmark from "../public/checkmark.svg";
 
 export default function Home() {
   const [faqs, setfaqs] = useState([
@@ -335,6 +337,66 @@ export default function Home() {
               <h1>Testimonials</h1>
             </div>
             <Slider slides={SliderData} />
+
+            <div className={styles.app_download}>
+              <div className={styles.ipad_image}></div>
+              <div className={styles.download_details}>
+                <div className={styles.span}>Download Jobly Today</div>
+                <h1>You can find Jobly on App and Play store</h1>
+                <p>Advertise your jobs to millions of monthly users</p>
+
+                <div className={styles.flex_list}>
+                  <div className={styles.wrpflex}>
+                    <div className={styles.checkmark}>
+                      <Image src={checkmark} alt="checkmark svg" />
+                    </div>
+                    <p>Ecommerce</p>
+                  </div>
+                  <div className={styles.wrpflex}>
+                    <div className={styles.checkmark}>
+                      <Image src={checkmark} alt="checkmark svg" />
+                    </div>
+                    <p>Responsive Design</p>
+                  </div>
+                  <div className={styles.wrpflex}>
+                    <div className={styles.checkmark}>
+                      <Image src={checkmark} alt="checkmark svg" />
+                    </div>
+                    <p>Web development</p>
+                  </div>
+                  <div className={styles.wrpflex}>
+                    <div className={styles.checkmark}>
+                      <Image src={checkmark} alt="checkmark svg" />
+                    </div>
+                    <p>Business</p>
+                  </div>
+                  <div className={styles.wrpflex}>
+                    <div className={styles.checkmark}>
+                      <Image src={checkmark} alt="checkmark svg" />
+                    </div>
+                    <p>Marketing</p>
+                  </div>
+                  <div className={styles.wrpflex}>
+                    <div className={styles.checkmark}>
+                      <Image src={checkmark} alt="checkmark svg" />
+                    </div>
+                    <p>Designers</p>
+                  </div>
+                </div>
+
+                <div className={styles.btns_wrp}>
+                  <Link href="https://www.apple.com/app-store/" passHref>
+                    <button className={styles.appStore}>App Store</button>
+                  </Link>
+                  <Link
+                    href="https://play.google.com/store/apps?hl=en_US&gl=US"
+                    passHref
+                  >
+                    <button className={styles.playStore}>Play Store</button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>

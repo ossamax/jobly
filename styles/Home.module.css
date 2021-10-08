@@ -371,6 +371,7 @@
   -webkit-column-gap: 50px;
           column-gap: 50px;
   max-width: 500px;
+  opacity: 0.3;
 }
 
 @media screen and (min-width: 700px) {
@@ -393,7 +394,6 @@
           justify-content: center;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  opacity: 0.3;
 }
 
 @media screen and (min-width: 700px) {
@@ -862,7 +862,7 @@
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  max-width: 600px;
+  max-width: 570px;
   margin: auto;
 }
 
@@ -921,6 +921,12 @@
   padding: 4rem 0;
 }
 
+@media screen and (min-width: 800px) {
+  .testimonials .wrapper {
+    padding: 6rem 0;
+  }
+}
+
 .testimonials .wrapper .header {
   text-align: center;
 }
@@ -940,6 +946,150 @@
   font-weight: 700;
   color: #1c4a36;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .testimonials .wrapper .header h1 {
+    font-size: 3rem;
+  }
+}
+
+.testimonials .wrapper .app_download {
+  padding: 4rem 0;
+  color: #1c4a36;
+}
+
+@media screen and (min-width: 600px) {
+  .testimonials .wrapper .app_download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.testimonials .wrapper .app_download .ipad_image {
+  width: 100%;
+  min-height: 400px;
+  background-image: url("../public/iPad.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 600px) {
+  .testimonials .wrapper .app_download .ipad_image {
+    height: 600px;
+  }
+}
+
+.testimonials .wrapper .app_download .download_details {
+  padding: 4rem 0;
+}
+
+.testimonials .wrapper .app_download .download_details .span {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 2px;
+  background-color: #e4f5ee;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.testimonials .wrapper .app_download .download_details h1 {
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .testimonials .wrapper .app_download .download_details h1 {
+    font-size: 3rem;
+  }
+}
+
+.testimonials .wrapper .app_download .download_details P {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.testimonials .wrapper .app_download .download_details .flex_list {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testimonials .wrapper .app_download .download_details .flex_list .wrpflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.testimonials .wrapper .app_download .download_details .flex_list .wrpflex .checkmark {
+  background-color: #e4f5ee;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+}
+
+.testimonials .wrapper .app_download .download_details .flex_list .wrpflex p {
+  font-weight: 400;
+  margin-left: 0.3rem;
+  color: #686868;
+  font-size: 0.95rem;
+}
+
+.testimonials .wrapper .app_download .btns_wrp {
+  margin-top: 2rem;
+}
+
+.testimonials .wrapper .app_download .btns_wrp button {
+  background-color: #e4f5ee;
+  color: #1c4a36;
+  padding: 1rem 2rem 1rem 3rem;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 15% 50%;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.testimonials .wrapper .app_download .btns_wrp button:hover {
+  background-color: #f2f8f5;
+}
+
+.testimonials .wrapper .app_download .btns_wrp .appStore {
+  margin-right: 1rem;
+  background-image: url("../public/apple-logo.png");
+}
+
+.testimonials .wrapper .app_download .btns_wrp .playStore {
+  background-image: url("../public/google-play.png");
 }
 
 @-webkit-keyframes scaleAnimation {

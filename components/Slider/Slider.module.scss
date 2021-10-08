@@ -2,13 +2,12 @@
   padding: 4rem 0 2rem;
   text-align: center;
   color: #1c4a36;
-
   .hide {
     display: none;
   }
   .active {
     display: block;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     .testi_image {
       width: 100px;
@@ -27,6 +26,9 @@
       font-size: 24px;
       line-height: 1.2;
       font-weight: 400;
+      @media screen and (min-width: 800px) {
+        font-size: 2rem;
+      }
     }
 
     .name,
