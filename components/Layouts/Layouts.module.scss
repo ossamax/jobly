@@ -69,7 +69,7 @@
         }
         .sublinks_categories_active {
           position: absolute;
-          top: 100%;
+          top: 90%;
           background-color: white;
           padding: 1rem 2rem;
           box-shadow: 1px 2px 10px rgba(128, 128, 128, 0.205);
@@ -213,6 +213,51 @@
   text-align: center;
   padding: 2rem;
   color: #1c4a36;
+  .wrapper {
+    padding: 2rem 0 0;
+    text-align: center;
+    .logo {
+      width: 80px;
+      margin: auto;
+      cursor: pointer;
+    }
+    .links_wrapper {
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      padding: 1rem 0;
+      grid-template-columns: 1fr;
+      border-top: 0.5px solid #eaeaea;
+      border-bottom: 0.5px solid #eaeaea;
+      @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .navigation,
+      .categories,
+      .location {
+        margin: 0.5rem 0;
+        h3 {
+          padding-bottom: 0.5rem;
+        }
+        div {
+          padding: 0.3rem 0;
+          cursor: pointer;
+          font-weight: 500;
+          width: fit-content;
+          margin: auto;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .copyrights {
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      color: #103f2b;
+    }
+  }
 }
 
 @keyframes FadeIn {

@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
       <div className={styles.container}>
         <header className={styles.header}>
           <div className={styles.navigation}>
-            <Link href="/">
+            <Link href="/" passHref>
               <div className={styles.logo}>
                 <Image src={logo} alt="Jobly logo brand" />
               </div>
@@ -120,7 +120,39 @@ const Layout = ({ children }) => {
           </div>
         </header>
         <main className={styles.main}>{children}</main>
-        <footer className={styles.footer}>footer</footer>
+        <footer className={styles.footer}>
+          <div className={styles.wrapper}>
+            <div className={styles.logo}>
+              <Image src={logo} alt="jobly logo" />
+            </div>
+            <div className={styles.links_wrapper}>
+              <div className={styles.navigation}>
+                <h3>Navigation</h3>
+                <div>Home</div>
+                <div>Jobs</div>
+                <div>Contact</div>
+              </div>
+              <div className={styles.categories}>
+                <h3>Categories</h3>
+                <div>Customer Services</div>
+                <div>Project Management</div>
+                <div>Development</div>
+                <div>Design</div>
+                <div>Marketing</div>
+                <div>Accounting / Finance</div>
+              </div>
+              <div className={styles.location}>
+                <h3>Navigation</h3>
+                <div>Morocco , NA</div>
+                <div>France ,UE</div>
+                <div>London ,UK</div>
+                <div>Manhattan,NY</div>
+                <div>Remote</div>
+              </div>
+            </div>
+            <div className={styles.copyrights}> @ All Rights are reserved</div>
+          </div>
+        </footer>
       </div>
     </>
   );
