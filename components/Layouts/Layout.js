@@ -45,9 +45,12 @@ const Layout = ({ children }) => {
             <div
               className={mobilelinks ? styles.mobile_links : styles.nav_links}
             >
-              <div className={styles.link}>Home </div>
-
-              <div className={styles.link}>Jobs</div>
+              <Link href="/" passHref>
+                <div className={styles.link}>Home </div>
+              </Link>
+              <Link href="jobs/jobs" passHref>
+                <div className={styles.link}>Jobs</div>
+              </Link>
 
               <div className={styles.link}>
                 <div
@@ -128,8 +131,12 @@ const Layout = ({ children }) => {
             <div className={styles.links_wrapper}>
               <div className={styles.navigation}>
                 <h3>Navigation</h3>
-                <div>Home</div>
-                <div>Jobs</div>
+                <Link href="/" passHref>
+                  <div className={styles.link}>Home </div>
+                </Link>
+                <Link href="jobs/jobs" passHref>
+                  <div className={styles.link}>Jobs</div>
+                </Link>
                 <div>Contact</div>
               </div>
               <div className={styles.categories}>

@@ -1,0 +1,71 @@
+.hero {
+  background-color: #e4f5ee;
+}
+
+.hero .wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+.hero .wrapper .header {
+  color: #1c4a36;
+  text-align: center;
+}
+
+.hero .wrapper .header h1 {
+  font-size: 2.3rem;
+}
+
+.hero .wrapper .header p {
+  margin-top: 0.8rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.hero .wrapper .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.hero .wrapper .links .links_wrp {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+.hero .wrapper .links .links_wrp .home {
+  cursor: pointer;
+}
+
+.hero .wrapper .links .links_wrp .home,
+.hero .wrapper .links .links_wrp .jobs {
+  margin: 0 0.3rem;
+  color: #1c4a36;
+  font-weight: 600;
+}
+
+.hero .wrapper .links .links_wrp .jobs {
+  color: #1c4a36af;
+}
+
+.hero .wrapper .links .links_wrp img {
+  width: 10px;
+}
+/*# sourceMappingURL=jobs.module.css.map */

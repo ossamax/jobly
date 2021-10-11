@@ -303,7 +303,7 @@ export default function Home() {
           <div className={styles.wrapper}>
             <div className={styles.faq_header}>
               <div className={styles.faq_span}>F.A.Q</div>
-              <h1>Things people oftenask about</h1>
+              <h1>Things people often ask about</h1>
             </div>
             <div className={styles.faq_questions}>
               {faqs.map((faq, i) => (

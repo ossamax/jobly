@@ -1,0 +1,51 @@
+.hero {
+  background-color: #e4f5ee;
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+    .header {
+      color: #1c4a36;
+      text-align: center;
+      h1 {
+        font-size: 2.3rem;
+      }
+      p {
+        margin-top: 0.8rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1.4;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5rem;
+      .links_wrp {
+        display: inline-flex;
+        align-items: center;
+        background-color: white;
+        padding: 0.4rem 0.5rem;
+        font-size: 0.9rem;
+        border-radius: 2px;
+        .home {
+          cursor: pointer;
+        }
+
+        .home,
+        .jobs {
+          margin: 0 0.3rem;
+          color: #1c4a36;
+          font-weight: 600;
+        }
+        .jobs {
+          color: #1c4a36af;
+        }
+        img {
+          width: 10px;
+        }
+      }
+    }
+  }
+}
