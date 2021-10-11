@@ -1092,6 +1092,97 @@
   background-image: url("../public/google-play.png");
 }
 
+.blog {
+  background-color: #f2f8f5;
+}
+
+.blog .wrapper {
+  padding: 4rem 0;
+  width: 90%;
+  margin: auto;
+}
+
+.blog .wrapper .header {
+  color: #1c4a36;
+}
+
+.blog .wrapper .header .text h1 {
+  font-size: 2.3rem;
+}
+
+.blog .wrapper .header .text p {
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+.blog .wrapper .header button {
+  background-color: #1c4a36;
+  color: white;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.blog .wrapper .posts {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+}
+
+.blog .wrapper .posts .post_one,
+.blog .wrapper .posts .post_two {
+  height: 300px;
+  background-color: red;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+}
+
+.blog .wrapper .posts .post_one .post_text,
+.blog .wrapper .posts .post_two .post_text {
+  font-weight: 500;
+}
+
+.blog .wrapper .posts .post_one .post_text .blog_title,
+.blog .wrapper .posts .post_two .post_text .blog_title {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.blog .wrapper .posts .overlay {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 107, 83, 0.4)), to(rgba(28, 74, 54, 0.63)));
+  background-image: linear-gradient(180deg, rgba(52, 107, 83, 0.4), rgba(28, 74, 54, 0.63));
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.blog .wrapper .posts .post_one {
+  background: url("../public/blog-1.jpeg");
+}
+
+.blog .wrapper .posts .post_two {
+  background: url("../public/blog-2.jpeg");
+}
+
 .contact {
   background-color: #1c4a36;
 }
@@ -1100,7 +1191,7 @@
   width: 90%;
   margin: auto;
   color: white;
-  padding: 4rem 0;
+  padding: 3rem 0;
   text-align: center;
   max-width: 500px;
   margin: auto;

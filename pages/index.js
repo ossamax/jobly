@@ -399,6 +399,37 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className={styles.blog}>
+          <div className={styles.wrapper}>
+            <div className={styles.header}>
+              <div className={styles.text}>
+                <h1>From Blog</h1>
+                <p>Check out our latest blog posts</p>
+              </div>
+              <button>View All Posts</button>
+            </div>
+            <div className={styles.posts}>
+              <div className={styles.post_one}>
+                <div className={styles.overlay}></div>
+                <div className={styles.post_text}>
+                  <p>April 30, 2020 / Announcement</p>
+                  <div className={styles.blog_title}>
+                    Why your client needs a responsive website
+                  </div>
+                </div>
+              </div>
+              <div className={styles.post_two}>
+                <div className={styles.overlay}></div>
+                <div className={styles.post_text}>
+                  <p>April 17, 2020 /Inspiration </p>
+                  <div className={styles.blog_title}>
+                    How to bring Jobly to your company
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={styles.contact}>
           <div className={styles.wrapper}>
             <div className={styles.span}>Contact Us</div>
