@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
               <Link href="/" passHref>
                 <div className={styles.link}>Home </div>
               </Link>
-              <Link href="jobs/jobs" passHref>
+              <Link href="../jobs/jobs" passHref>
                 <div className={styles.link}>Jobs</div>
               </Link>
 
