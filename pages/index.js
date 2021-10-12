@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 import Layout from "../components/Layouts/Layout";
 import styles from "../styles/Home.module.scss";
@@ -11,64 +10,14 @@ import partner4 from "../public/partner4.png";
 import feature1 from "../public/features1.png";
 import feature2 from "../public/features2.png";
 import feature3 from "../public/features3.png";
-import dribble from "../public/dribble_logo.png";
-import paypal from "../public/paypal_logo.png";
-import apple from "../public/apple_logo.png";
-import starbuck from "../public/starbucks_logo.png";
-import dell from "../public/dell_logo.png";
-import slack from "../public/slack_logo.png";
 import Slider from "../components/Slider/Slider";
 import { SliderData } from "../components/Slider/SliderData";
 import checkmark from "../public/checkmark.svg";
+import Jobs from "../components/jobsPosts/jobsposts";
+import Questions from "../components/questions/questions";
+import Contact from "../components/contact/contact";
 
 export default function Home() {
-  const [faqs, setfaqs] = useState([
-    {
-      question: " Why wont my payment go through?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      open: false,
-    },
-    {
-      question: "How long does it take to get a free job opening approved?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      open: false,
-    },
-    {
-      question: "Are there bulk discounts for featured job openings?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      open: false,
-    },
-    {
-      question: "What's the cost to post a featured job opening on Jobly?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      open: false,
-    },
-    {
-      question: "Why won't my payment go through?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      open: false,
-    },
-    {
-      question: "How do I redeem a coupon?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      open: false,
-    },
-  ]);
-
-  const toggleFAQ = (index) => {
-    setfaqs(
-      faqs.map((faq, i) => {
-        if (i === index) {
-          faq.open = !faq.open;
-        } else {
-          faq.open = false;
-        }
-
-        return faq;
-      })
-    );
-  };
-
   return (
     <div className={styles.container}>
       <Layout>
@@ -157,179 +106,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.jobs}>
-          <div className={styles.wrapper}>
-            <div className={styles.header}>
-              <div className={styles.header_text}>
-                <h1>Featured Jobs</h1>
-                <p>Know your worth and find the job that qualify your life</p>
-              </div>
-              <button>View All Listing</button>
-            </div>
-            <div className={styles.jobs_ctegories}>
-              <div className={styles.allCategories}>All Categories :</div>
-              <div className={styles.Categories}>
-                <div>Customer Services</div>
-                <div>Project Management</div>
-                <div>Development</div>
-                <div>Design</div>
-                <div>Marketing</div>
-                <div>Accounting / Finance</div>
-              </div>
-            </div>
 
-            <div className={styles.jobsList}>
-              <div className={styles.job}>
-                <div className={styles.partTime}>Part Time</div>
-                <Image src={dribble} alt="dribble logo" />
-                <p>Dribbble</p>
-                <h2>Customer Support Agent</h2>
-                <div className={styles.description}>
-                  <div>$40,000 - $200,000/year</div>
-                  <div>/</div>
-                  <div>Remote</div>
-                  <div>/</div>
-                  <div>Project Management</div>
-                  <div>/</div>
-                  <div>Part Time</div>
-                </div>
-                <button>Apply For Job</button>
-              </div>
-              <div className={styles.job}>
-                <div className={styles.partTime}>Part Time</div>
-                <div className={styles.featured}>Featured</div>
-                <Image src={paypal} alt="paypal logo" />
-                <p>PayPal</p>
-                <h2>General Ledger Accountant</h2>
-                <div className={styles.description}>
-                  <div>$40,000 - $200,000/year</div>
-                  <div>/</div>
-                  <div>Miami,FL</div>
-                  <div>/</div>
-                  <div>Accounting / Finance</div>
-                  <div>/</div>
-                  <div>Part Time</div>
-                </div>
-                <button>Apply For Job</button>
-              </div>
-              <div className={styles.job}>
-                <div className={styles.partTime}>Part Time</div>
-                <Image src={apple} alt="apple logo" />
-                <p>Apple</p>
-                <h2>Senior Product Designer</h2>
-                <div className={styles.description}>
-                  <div>$40,000 - $200,000/year</div>
-                  <div>/</div>
-                  <div>London, UK</div>
-                  <div>/</div>
-                  <div>Design</div>
-                  <div>/</div>
-                  <div>Part Time</div>
-                </div>
-                <button>Apply For Job</button>
-              </div>
-              <div className={styles.job}>
-                <div className={styles.partTime}>Part Time</div>
-                <Image src={starbuck} alt="sturbucks logo" />
-                <p>Starbuck</p>
-                <h2>Product Manager</h2>
-                <div className={styles.description}>
-                  <div>$40,000 - $200,000/year</div>
-                  <div>/</div>
-                  <div>Manhattan, NY</div>
-                  <div>/</div>
-                  <div>Development</div>
-                  <div>/</div>
-                  <div>Full Time</div>
-                </div>
-                <button>Apply For Job</button>
-              </div>
-              <div className={styles.job}>
-                <div className={styles.partTime}>Full Time</div>
-                <Image src={dell} alt="dell logo" />
-                <p>Dell</p>
-                <h2>Software Engineer</h2>
-                <div className={styles.description}>
-                  <div>$40,000 - $200,000/year</div>
-                  <div>/</div>
-                  <div>Remote</div>
-                  <div>/</div>
-                  <div>Development</div>
-                  <div>/</div>
-                  <div>Full Time</div>
-                </div>
-                <button>Apply For Job</button>
-              </div>
-              <div className={styles.job}>
-                <div className={styles.partTime}>Part Time</div>
-                <div className={styles.featured}>Featured</div>
-                <Image src={slack} alt="apple logo" />
-                <p>Slack</p>
-                <h2>Senior Product Designer</h2>
-                <div className={styles.description}>
-                  <div>$40,000 - $200,000/year</div>
-                  <div>/</div>
-                  <div>London, UK</div>
-                  <div>/</div>
-                  <div>Design</div>
-                  <div>/</div>
-                  <div>Part Time</div>
-                </div>
-                <button>Apply For Job</button>
-              </div>
-            </div>
-            <div className={styles.selectLocation}>Select By Location</div>
-            <div className={styles.locations}>
-              <div className={styles.miami}>
-                <h3>Miami,FL</h3>
-                <div className={styles.locationOverlay}></div>
-              </div>
-              <div className={styles.morocco}>
-                <h3>Morocco ,RB</h3>
-                <div className={styles.locationOverlay}></div>
-              </div>
-              <div className={styles.france}>
-                <h3>France,PR</h3>
-                <div className={styles.locationOverlay}></div>
-              </div>
-              <div className={styles.remote}>
-                <h3>Remote</h3>
-                <div className={styles.locationOverlay}></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.faq}>
-          <div className={styles.wrapper}>
-            <div className={styles.faq_header}>
-              <div className={styles.faq_span}>F.A.Q</div>
-              <h1>Things people often ask about</h1>
-            </div>
-            <div className={styles.faq_questions}>
-              {faqs.map((faq, i) => (
-                <div className={styles.question_wrp} key={i}>
-                  <div className={styles.qst} onClick={() => toggleFAQ(i)}>
-                    <div
-                      className={!faq.open ? styles.plusicon : styles.rotate}
-                    >
-                      +
-                    </div>
-                    <div className={styles.main_qst}>{faq.question}</div>
-                  </div>
-                  <div
-                    className={
-                      !faq.open
-                        ? styles.respond_nonactive
-                        : styles.respond_active
-                    }
-                  >
-                    {faq.answer}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <Jobs />
+
+        <Questions />
         <div className={styles.testimonials}>
           <div className={styles.wrapper}>
             <div className={styles.header}>
@@ -416,6 +196,7 @@ export default function Home() {
                   <div className={styles.blog_title}>
                     Why your client needs a responsive website
                   </div>
+                  <button>Read More</button>
                 </div>
               </div>
               <div className={styles.post_two}>
@@ -425,21 +206,13 @@ export default function Home() {
                   <div className={styles.blog_title}>
                     How to bring Jobly to your company
                   </div>
+                  <button>Read More</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={styles.contact}>
-          <div className={styles.wrapper}>
-            <div className={styles.span}>Contact Us</div>
-            <h1>Got a question?</h1>
-            <p>
-              We are here to help. Check out our <span>FAQs</span>, send us an{" "}
-              <span>email</span> or call us at <span>+1 800 444 111</span>
-            </p>
-          </div>
-        </div>
+        <Contact />
       </Layout>
     </div>
   );

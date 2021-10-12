@@ -329,308 +329,7 @@
   }
 }
 
-.jobs {
-  background-color: #f2f8f5;
-  .wrapper {
-    width: 90%;
-    margin: auto;
-    padding: 4rem 0;
-    .header {
-      @media screen and (min-width: 600px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 5rem;
-      }
-      .header_text {
-        color: #1c4a36;
-        font-weight: 600;
-        h1 {
-          margin-bottom: 0.5rem;
-        }
-      }
-      button {
-        background-color: #1c4a36;
-        color: white;
-        border: none;
-        padding: 1rem 1.5rem;
-        font-weight: 600;
-        margin-top: 2rem;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 0.9rem;
-      }
-    }
-    .jobs_ctegories {
-      font-size: 0.85rem;
-      font-weight: 400;
-      margin: 2rem 0;
-      @media screen and (min-width: 600px) {
-        display: flex;
-        align-items: center;
-      }
-      .allCategories {
-        text-align: center;
-        color: #919191;
-        margin-bottom: 0.5rem;
-        cursor: pointer;
-        @media screen and (min-width: 600px) {
-          margin: 0;
-        }
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      .Categories {
-        color: #686868;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        div {
-          width: auto;
-          margin: 0.5rem;
-          cursor: pointer;
-          @media screen and (min-width: 600px) {
-            margin: 0 0.5rem;
-          }
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-    .jobsList {
-      display: grid;
-      column-gap: 30px;
-      row-gap: 30px;
-      @media screen and (min-width: 600px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @media screen and (min-width: 800px) {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .job {
-        background-color: white;
-        color: #1c4a36;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-        padding: 2rem 1rem;
-        transition: 0.3s ease-in-out;
-        position: relative;
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 5px 5px 10px rgb(228, 227, 227);
-        }
-        .partTime {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-          background-color: #e4f5ee;
-          color: #1c4a36;
-          border-radius: 2px;
-          padding: 0.5rem;
-          font-size: 0.75rem;
-          font-weight: 500;
-        }
-        .featured {
-          position: absolute;
-          top: 1rem;
-          left: 1rem;
-          background-color: #f5e4f4;
-          color: #611a2c;
-          border-radius: 2px;
-          padding: 0.5rem;
-          font-size: 0.75rem;
-          font-weight: 500;
-        }
-        img {
-          width: 55px;
-        }
-        p {
-          font-weight: 500;
-        }
-        h2 {
-          margin: 1.5rem 0;
-        }
-        .description {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          div {
-            width: auto;
-            margin: 0.5rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #686868;
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-        button {
-          background-color: #1c4a36;
-          color: white;
-          padding: 0.8rem 1.5rem;
-          font-weight: 600;
-          border: none;
-          margin-top: 1rem;
-          font-size: 0.9rem;
-          cursor: pointer;
-          border-radius: 4px;
-        }
-      }
-    }
-    .selectLocation {
-      text-align: center;
-      margin: 2rem 0;
-      color: #1c4a36;
-      font-weight: 600;
-      @media screen and (min-width: 1000px) {
-        margin: 4rem 0 2rem;
-      }
-    }
-    .locations {
-      display: grid;
-      row-gap: 20px;
-      column-gap: 20px;
-      @media screen and (min-width: 600px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @media screen and (min-width: 800px) {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      @media screen and (min-width: 1000px) {
-        grid-template-columns: repeat(4, 1fr);
-      }
-      .miami,
-      .morocco,
-      .france,
-      .remote {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        border-radius: 5px;
-        width: 100%;
-        height: 200px;
-        position: relative;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        &:hover {
-          transform: translateY(-3px);
-        }
 
-        h3 {
-          position: absolute;
-          letter-spacing: 1px;
-          bottom: 1rem;
-          z-index: 2;
-        }
-        .locationOverlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 1;
-          background-image: linear-gradient(
-            180deg,
-            rgba(52, 107, 83, 0.4),
-            rgba(28, 74, 54, 0.452)
-          );
-        }
-      }
-      .miami {
-        background-image: url("../public/miami.jpg");
-      }
-      .morocco {
-        background-image: url("../public/morocco.jpg");
-      }
-      .france {
-        background-image: url("../public/paris.jpg");
-      }
-      .remote {
-        background-image: url("../public/remote.jpg");
-      }
-    }
-  }
-}
-
-.faq {
-  background-color: #f2f8f5;
-  color: #1c4a36;
-  .wrapper {
-    width: 90%;
-    margin: auto;
-    padding: 4rem 0;
-    .faq_header {
-      text-align: center;
-      .faq_span {
-        background-color: white;
-        color: #1c4a36;
-        display: inline-block;
-        font-size: 0.8rem;
-        padding: 0.5rem;
-        font-weight: 600;
-        border-radius: 5px;
-      }
-      h1 {
-        font-weight: 700;
-      }
-    }
-    .faq_questions {
-      margin-top: 4rem;
-
-      .question_wrp {
-        padding: 1rem 0;
-        border-bottom: 0.5px solid #1c4a3617;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        max-width: 570px;
-        margin: auto;
-        .qst {
-          display: flex;
-          align-items: flex-start;
-          margin-bottom: 0.5rem;
-          .plusicon {
-            padding: 0 0.4rem;
-            margin-right: 0.5rem;
-            font-size: 1.5rem;
-            transition: 0.3s ease-in-out;
-          }
-          .rotate {
-            padding: 0 0.4rem;
-            margin-right: 0.5rem;
-            font-size: 1.5rem;
-            transform: translateX(0.5px) rotate(45deg);
-            transition: 0.3s ease-in-out;
-          }
-          .main_qst {
-            color: #1c4a36;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 0.2rem 0;
-          }
-        }
-        .respond_active {
-          display: block;
-          color: #686868;
-          line-height: 1.5;
-          animation: fadeAnimation 0.4s ease-in-out forwards;
-          transition: 0.5s ease-in-out;
-        }
-        .respond_nonactive {
-          display: none;
-        }
-      }
-    }
-  }
-}
 
 .testimonials {
   .wrapper {
@@ -726,7 +425,13 @@
       }
       .btns_wrp {
         margin-top: 2rem;
+        display: grid;
+        row-gap: 20px;
+        @media screen and (min-width: 300px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
         button {
+          width: fit-content;
           background-color: #e4f5ee;
           color: #1c4a36;
           padding: 1rem 2rem 1rem 3rem;
@@ -811,12 +516,30 @@
         .post_text {
           font-weight: 500;
           text-align: center;
+          P {
+            font-size: 0.9rem;
+          }
           .blog_title {
             font-size: 1.4rem;
-            margin-top: 0.5rem;
-            font-weight: 600;
+            margin: 1.3rem 0;
+            font-weight: 700;
             @media screen and (min-width: 600px) {
               font-size: 2rem;
+            }
+          }
+          button {
+            background-color: #e4f5ee;
+            padding: 0.8rem 1.6rem;
+            color: #1c4a36;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              background-color: #1c4a36;
+              color: white;
             }
           }
         }
@@ -831,50 +554,13 @@
         left: 0;
         bottom: 0;
         right: 0;
-        top: 0;
+        top: 0rem;
       }
       .post_one {
         background: url("../public/blog-1.jpeg");
       }
       .post_two {
         background: url("../public/blog-2.jpeg");
-      }
-    }
-  }
-}
-.contact {
-  background-color: #1c4a36;
-
-  .wrapper {
-    width: 90%;
-    margin: auto;
-    color: white;
-    padding: 3rem 0;
-    text-align: center;
-    max-width: 500px;
-    margin: auto;
-    .span {
-      background-color: #e4f5ee;
-      color: #1c4a36;
-      display: inline-block;
-      font-size: 0.8rem;
-      padding: 0.5rem;
-      font-weight: 600;
-      border-radius: 3px;
-    }
-    h1 {
-      margin: 1rem 0 0.5rem;
-      @media screen and (min-width: 500px) {
-        font-size: 3rem;
-      }
-    }
-    P {
-      color: hsla(0, 0%, 100%, 0.8);
-      line-height: 1.5;
-      span {
-        color: white;
-        text-decoration: underline;
-        cursor: pointer;
       }
     }
   }

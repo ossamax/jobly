@@ -4,6 +4,9 @@ import styles from "./jobs.module.css";
 import arrowicon from "../../public/arrow-bread.svg";
 import Image from "next/image";
 import Link from "next/link";
+import JobsPosts from "../../components/jobsPosts/jobsposts";
+import Questions from "../../components/questions/questions";
+import Contact from "../../components/contact/contact";
 
 const Jobs = () => {
   return (
@@ -32,6 +35,9 @@ const Jobs = () => {
             </div>
           </div>
         </div>
+        <JobsPosts styles={{ backGround: " white" }} />
+        <Questions />
+        <Contact />
       </Layout>
     </>
   );
