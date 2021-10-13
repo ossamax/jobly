@@ -109,6 +109,12 @@ const Layout = ({ children }) => {
                   <div>Remote</div>
                 </div>
               </div>
+              <Link href="../sign-in/sign-in" passHref>
+                <div className={styles.sign}>Sign in</div>
+              </Link>
+              <Link href="../sign-up/signup" passHref>
+                <div className={styles.sign}>Sign up</div>
+              </Link>
             </div>
             <div className={styles.cta_container}>
               <button className={styles.cta_login}>Login / Register</button>
