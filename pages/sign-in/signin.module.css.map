@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "signin.module.scss"
+    ],
+    "names": [],
+    "file": "signin.module.css"
+}

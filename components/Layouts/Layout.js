@@ -112,12 +112,15 @@ const Layout = ({ children }) => {
               <Link href="../sign-in/sign-in" passHref>
                 <div className={styles.sign}>Sign in</div>
               </Link>
-              <Link href="../sign-up/signup" passHref>
+              <Link href="../sign-up/sign-up" passHref>
                 <div className={styles.sign}>Sign up</div>
               </Link>
             </div>
             <div className={styles.cta_container}>
-              <button className={styles.cta_login}>Login / Register</button>
+              <Link href="../sign-up/sign-up" passHref>
+                <button className={styles.cta_login}>Login / Register</button>
+              </Link>
+
               <div className={styles.bar_container} onClick={activeMobilelinks}>
                 <Image
                   src={barMenu}
