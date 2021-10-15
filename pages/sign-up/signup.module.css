@@ -1,5 +1,6 @@
 .body {
   background-color: #e4f5ee;
+  overflow: hidden;
 }
 
 .logo_wrapper {
