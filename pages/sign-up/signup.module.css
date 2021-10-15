@@ -42,34 +42,142 @@
   cursor: pointer;
   font-weight: 500;
   border: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.form_wrapper .wrapper .form_label button:hover {
+  opacity: 0.4;
 }
 
 .form_wrapper .wrapper form {
-  margin-top: 2rem;
+  max-width: 450px;
+  margin: 2rem auto 0;
 }
 
 .form_wrapper .wrapper form input,
 .form_wrapper .wrapper form button {
   width: 100%;
   padding: 1rem;
-  margin: 0.3rem;
+  margin: 0.4rem;
   border-radius: 4px;
   border: none;
   font-weight: 500;
+  outline: none;
 }
 
-.form_wrapper .wrapper form button {
+.form_wrapper .wrapper form button[type="submit"] {
   background-color: #1c4a36;
   color: white;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 1.3px solid transparent;
+}
+
+.form_wrapper .wrapper form button[type="submit"]:hover {
+  border-color: #1c4a36;
+  background-color: white;
+  color: #1c4a36;
 }
 
 .form_wrapper .wrapper form .terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+.form_wrapper .wrapper form .terms input {
+  padding: 0.2rem;
+  margin-right: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form_wrapper .wrapper form .terms p {
+  color: #686868;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.form_wrapper .wrapper form .terms p span {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form_wrapper .wrapper form .flex {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #686868;
+}
+
+.form_wrapper .wrapper form .flex .line {
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  margin: 0 0.5rem;
+}
+
+.form_wrapper .wrapper form .googlebtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_wrapper .wrapper form .googlebtn button {
+  background-color: white;
+  color: #1c4a36;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.form_wrapper .wrapper form .googlebtn button:hover {
+  background-color: #fcfafa;
+  color: #2f7c5b;
+}
+
+.form_wrapper .wrapper form .googlebtn p {
+  font-size: 0.8rem;
+  color: #686868;
+  margin-top: 0.5rem;
+}
+
+.form_wrapper .wrapper form .googlebtn p span {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
 }
 /*# sourceMappingURL=signup.module.css.map */

@@ -35,10 +35,26 @@ const Signup = () => {
             <input type="password" placeholder="Repeat Password" />
             <button type="submit">Sign Up</button>
             <div className={styles.terms}>
-              <div>
-                <input type="checkbox" name="" id="" />
-              </div>
-              <div>I agree to our Terms & Conditions.</div>
+              <input type="checkbox" />
+              <p>
+                I agree to our <span>Terms & Conditions</span>.
+              </p>
+            </div>
+            <div className={styles.flex}>
+              <div className={styles.line}></div>
+              <div>or</div>
+              <div className={styles.line}></div>
+            </div>
+            <div className={styles.googlebtn}>
+              <Link href="https://www.google.com/" passHref>
+                <button>Sign Up With Google</button>
+              </Link>
+              <p>
+                Already have an account?
+                <Link href="../sign-in/sign-in" passHref>
+                  <span>Sign In</span>
+                </Link>
+              </p>
             </div>
           </form>
         </div>
