@@ -40,7 +40,7 @@ const Signin = () => {
                 <button>Sign Up With Google</button>
               </Link>
               <p>
-                Don't have an account yet?
+                Dont have an account yet?
                 <Link href="../sign-up/sign-up" passHref>
                   <span>Sign Up</span>
                 </Link>
