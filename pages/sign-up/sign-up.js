@@ -27,14 +27,14 @@ const Signup = () => {
             </div>
           </div>
           <form action="">
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Last name" />
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Repeat Password" />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Name" required />
+            <input type="text" placeholder="Last name" required />
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Repeat Password" required />
             <button type="submit">Sign Up</button>
             <div className={styles.terms}>
-              <input type="checkbox" />
+              <input type="checkbox" required />
               <p>
                 I agree to our <span>Terms & Conditions</span>.
               </p>

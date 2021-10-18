@@ -23,11 +23,11 @@ const Signin = () => {
             <h1>Sign In</h1>
           </div>
           <form action="">
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
             <button type="submit">Sign In</button>
             <div className={styles.terms}>
-              <input type="checkbox" />
+              <input type="checkbox" required aa/>
               <p>Kep me signed in.</p>
             </div>
             <div className={styles.flex}>

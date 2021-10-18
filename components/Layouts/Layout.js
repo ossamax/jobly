@@ -158,7 +158,7 @@ const Layout = ({ children }) => {
                 <div>Accounting / Finance</div>
               </div>
               <div className={styles.location}>
-                <h3>Navigation</h3>
+                <h3>Places</h3>
                 <div>Morocco , NA</div>
                 <div>France ,UE</div>
                 <div>London ,UK</div>

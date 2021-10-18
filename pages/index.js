@@ -30,7 +30,11 @@ export default function Home() {
                 Find jobs, create trackable resumes and enrich your applications
               </p>
               <form action="">
-                <input type="text" placeholder="Job Title , Keywords..." />
+                <input
+                  type="text"
+                  placeholder="Job Title , Keywords..."
+                  required
+                />
                 <button type="submit">Find Jobs</button>
               </form>
               <div className={styles.popular_categories}>
